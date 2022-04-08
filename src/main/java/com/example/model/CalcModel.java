@@ -6,19 +6,14 @@ public class CalcModel {
 
         double result = 0.0;
         // 演算子によって計算処理を分岐
-        switch (operator) {
-            case "⁺":
-                result = x + y;
-                break;
-            case "-":
-                result = x - y;
-                break;
-            case "×":
-                result = x * y;
-                break;
-            case "÷":
-                result = x / y;
-                break;
+        if ("⁺".equals(operator)) {
+            result = x + y;
+        } else if ("-".equals(operator)) {
+            result = x - y;
+        } else if ("×".equals(operator)) {
+            result = x * y;
+        } else if ("÷".equals(operator)) {
+            result = x / y;
         }
         return result;
 
